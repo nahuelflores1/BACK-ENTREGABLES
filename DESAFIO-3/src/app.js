@@ -1,12 +1,10 @@
-// app.js
-
 import express from "express";
 import ProductManager from "../product-manager.js";
 
 const app = express();
 const puerto = 8080;
 
-const gestorProductos = new ProductManager("../products.json"); // Asegúrate de tener un archivo products.json con tus productos.
+const gestorProductos = new ProductManager("../products.json");
 
 app.get("/products", async (req, res) => {
     const { limit } = req.query;
