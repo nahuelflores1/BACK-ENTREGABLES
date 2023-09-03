@@ -1,5 +1,3 @@
-// ProductManager.js
-
 import { promises as fs } from "fs";
 
 class GestorProductos {
